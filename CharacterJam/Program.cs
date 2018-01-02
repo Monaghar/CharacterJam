@@ -28,10 +28,10 @@ namespace CharacterJam
             Console.WriteLine(Jeff.Race.ToString());
             Jeff.Class = Generate.RollClass(rnd);
             Console.WriteLine(Jeff.Class.ToString());
-            Console.ReadKey();
-
-
-
+            Jeff.Background = Generate.RollBackground(rnd);
+            string ACOL = Generate.RollTrait(rnd);
+            Console.Write(ACOL);
+            Console.Read();
         }
     }
 }

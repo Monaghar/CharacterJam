@@ -45,12 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acolyte.cs" />
     <Compile Include="Barbarian.cs" />
     <Compile Include="Bard.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="Charlatan.cs" />
     <Compile Include="Commoner.cs" />
+    <Compile Include="Criminal.cs" />
+    <Compile Include="Entertainer.cs" />
+    <Compile Include="FolkHero.cs" />
     <Compile Include="Generate.cs" />
-    <Compile Include="IBackground.cs" />
+    <Compile Include="GuildArtisan.cs" />
+    <Compile Include="Hermit.cs" />
+    <Compile Include="Background.cs" />
     <Compile Include="IClass.cs" />
     <Compile Include="Cleric.cs" />
     <Compile Include="DarkElf.cs" />
@@ -67,6 +74,8 @@
     <Compile Include="LightfootHalfling.cs" />
     <Compile Include="Monk.cs" />
     <Compile Include="MountainDwarf.cs" />
+    <Compile Include="Noble.cs" />
+    <Compile Include="Outlander.cs" />
     <Compile Include="Paladin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,10 +83,14 @@
     <Compile Include="Ranger.cs" />
     <Compile Include="RockGnome.cs" />
     <Compile Include="Rogue.cs" />
+    <Compile Include="Sage.cs" />
+    <Compile Include="Sailor.cs" />
+    <Compile Include="Soldier.cs" />
     <Compile Include="Sorcerer.cs" />
     <Compile Include="Stats.cs" />
     <Compile Include="StoutHalfling.cs" />
     <Compile Include="Tiefling.cs" />
+    <Compile Include="Urchin.cs" />
     <Compile Include="Warlock.cs" />
     <Compile Include="Wizard.cs" />
     <Compile Include="WoodElf.cs" />

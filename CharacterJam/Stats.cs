@@ -48,17 +48,17 @@ namespace CharacterJam
         public int Survival { get; set; }
     }
 
-    public enum Tools
+    public struct Tools
     {
-        ArtisansTools,
-        DisguiseKit,
-        ForgeryKit,
-        GamingSet,
-        HerbalismKit,
-        MusicalInstrument,
-        NavigatorsTools,
-        PoisonersKit,
-        ThievesTools
+        public int ArtisansTools { get; set; }
+        public int DisguiseKit { get; set; }
+        public int ForgeryKit { get; set; }
+        public int GamingSet { get; set; }
+        public int HerbalismKit { get; set; }
+        public int MusicalInstrument { get; set; }
+        public int NavigatorsTools { get; set; }
+        public int PoisonersKit { get; set; }
+        public int ThievesTools { get; set; }
     }
 
     public enum Lifestyle

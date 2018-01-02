@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Commoner : IToon
+    public class Commoner : IToon
     {
         public string Name { get; set; }
         public string Gender { get; set; }
@@ -19,6 +19,6 @@ namespace CharacterJam
         public Tools Tools { get; set; }
         public Lifestyle Lifestyle { get; set; }
         public Alignment Alignment { get; set; }
-        //public Background Background { get; set; }
+        public Background Background { get; set; }
     }
 }

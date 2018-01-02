@@ -19,6 +19,6 @@ namespace CharacterJam
         public Tools Tools { get; set; }
         public Lifestyle Lifestyle { get; set; }
         public Alignment Alignment { get; set; }
-        //public Background Background { get; set; }
+        public Background Background { get; set; }
     }
 }
