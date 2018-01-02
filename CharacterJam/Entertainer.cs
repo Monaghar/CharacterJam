@@ -10,10 +10,8 @@ namespace CharacterJam
     {
         public List<string> Trait
         {
-            get { return Trait; }
-            private set
-            {
-                Trait = new List<string> {
+            get {
+                return Trait = new List<string> {
             "I know a story relevant to almost every situation.",
             "Whenever I come to a new place, I collect local rumors and spread gossip.",
             "I’m a hopeless romantic, always searching for that “special someone.” ",
@@ -23,14 +21,12 @@ namespace CharacterJam
             "I’ll settle for nothing less than perfection.",
             "I change my mood or my mind as quickly as I change key in a song."};
             }
+            private set{}
         }
 
         public List<string> Ideal
         {
-            get { return Ideal; }
-            private set
-            {
-                Ideal = new List<string>{
+            get { return Ideal = new List<string>{
             "Beauty. When I perform, I make the world better than it was. (Good)",
             "Tradition. The stories, legends, and songs o f the past must never be forgotten, for they teach us who we are. (Lawful)",
             "Creativity. The world is in need of new ideas and bold action. (Chaotic)",
@@ -38,14 +34,12 @@ namespace CharacterJam
             "People. I like seeing the smiles on people’s faces when I perform. That’s all that matters. (Neutral)",
             "Honesty. Art should reflect the soul; it should come from within and reveal who we really are. (Any)"};
             }
+            private set{}
         }
 
         public List<string> Bond
         {
-            get { return Bond; }
-            private set
-            {
-                Bond = new List<string> {
+            get { return Bond = new List<string> {
             "My instrument is my most treasured possession, and it reminds me of someone I love.",
             "Someone stole my precious instrument, and someday I’ll get it back.",
             "I want to be famous, whatever it takes.",
@@ -53,14 +47,12 @@ namespace CharacterJam
             "I will do anything to prove myself superior to my hated rival.",
             "I would do anything for the other members of my old troupe."};
             }
+            private set{}
         }
 
         public List<string> Flaw
         {
-            get { return Flaw; }
-            private set
-            {
-                Flaw = new List<string>{
+            get { return Flaw = new List<string>{
             "I’ll do anything to win fame and renown.",
             "I’m a sucker for a pretty face.",
             "A scandal prevents me from ever going home again. That kind of trouble seems to follow me around.",
@@ -68,9 +60,10 @@ namespace CharacterJam
             "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble.",
             "Despite my best efforts, I am unreliable to my friends." };
             }
+            private set{}
         }
 
-        public Skills Skillz { get { return Skillz; } private set { Skillz = new Skills { Acrobatics = 2, Performance = 2 }; } } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz; } private set { Toolz = new Tools { DisguiseKit = 1, MusicalInstrument = 1 }; } }
+        public Skills Skillz { get { return Skillz = new Skills { Acrobatics = 2, Performance = 2 }; }  private set {}} // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { DisguiseKit = 1, MusicalInstrument = 1 }; }  private set {}}
     }
 }

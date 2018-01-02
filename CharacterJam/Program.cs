@@ -29,7 +29,8 @@ namespace CharacterJam
             Jeff.Class = Generate.RollClass(rnd);
             Console.WriteLine(Jeff.Class.ToString());
             Jeff.Background = Generate.RollBackground(rnd);
-            string ACOL = Generate.RollTrait(rnd);
+            Acolyte ass = new Acolyte();
+            var ACOL = ass.Trait[rnd.Next(ass.Trait.Count)];
             Console.Write(ACOL);
             Console.Read();
         }

@@ -10,10 +10,7 @@ namespace CharacterJam
     {
         public List<string> LifeOfSeclusion
         {
-            get { return LifeOfSeclusion; }
-            private set
-            {
-                LifeOfSeclusion = new List<string> {
+            get { return LifeOfSeclusion = new List<string> {
             "I was searching for spiritual enlightenment.",
             "I was partaking of communal living in accordance with the dictates of a religious order.",
             "I was exiled for a crime I didn’t commit.",
@@ -23,15 +20,12 @@ namespace CharacterJam
             "I was the caretaker of an ancient ruin or relic.",
             "I was a pilgrim in search of a person, place, or relic of spiritual significance."};
             }
+            private set{}
         }
 
         public List<string> Trait
         {
-            get { return Trait; }
-            private set
-            {
-                Trait = new List<string> {
-            "I’ve been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.",
+            get { return Trait = new List<string> {"I’ve been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.",
             "I am utterly serene, even in the face of disaster.",
             "The leader of my community had something wise to say on every topic, and I am eager to share that wisdom.",
             "I feel tremendous empathy for all who suffer.",
@@ -39,15 +33,13 @@ namespace CharacterJam
             "I connect everything that happens to me to a grand, cosmic plan.",
             "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.",
             "I am working on a grand philosophical theory and love sharing my ideas."};
-            }
+        }
+            private set{}
         }
 
         public List<string> Ideal
         {
-            get { return Ideal; }
-            private set
-            {
-                Ideal = new List<string>{
+            get { return Ideal = new List<string>{
             "Greater Good. My gifts are meant to be shared with all, not used for my own benefit. (Good)",
             "Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking. (Lawful)",
             "Free Thinking. Inquiry and curiosity are the pillars of progress. (Chaotic)",
@@ -55,14 +47,13 @@ namespace CharacterJam
             "Live and Let Live. Meddling in the affairs o f others only causes trouble. (Neutral)",
             "Self-Knowledge. If you know yourself, there’s nothing left to know. (Any)"};
             }
+            private set{}
         }
 
         public List<string> Bond
         {
-            get { return Bond; }
-            private set
-            {
-                Bond = new List<string> {
+            get {
+                return Bond = new List<string> {
             "Nothing is more important than the other members of my hermitage, order, or association.",
             "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them.",
             "I’m still seeking the enlightenment I pursued in my seclusion, and it still eludes me.",
@@ -70,14 +61,12 @@ namespace CharacterJam
             "Should my discovery come to light, it could bring ruin to the world.",
             "My isolation gave me great insight into a great evil that only I can destroy."};
             }
+            private set{}
         }
 
         public List<string> Flaw
         {
-            get { return Flaw; }
-            private set
-            {
-                Flaw = new List<string>{
+            get { return Flaw = new List<string>{
             "Now that I've returned to the world, I enjoy its delights a little too much.",
             "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell.",
             "I am dogmatic in my thoughts and philosophy.",
@@ -85,9 +74,10 @@ namespace CharacterJam
             "I’d risk too much to uncover a lost bit of knowledge.",
             "I like keeping secrets and won’t share them with anyone." };
             }
+            private set{}
         }
 
-        public Skills Skillz { get { return Skillz; } private set { Skillz = new Skills { Medicine = 2, Religion = 2 }; } } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz; } private set { Toolz = new Tools { HerbalismKit = 1}; } }
+        public Skills Skillz { get { return Skillz = new Skills { Medicine = 2, Religion = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { HerbalismKit = 1 }; } private set {} }
     }
 }

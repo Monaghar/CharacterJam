@@ -10,10 +10,8 @@ namespace CharacterJam
     {
         public List<string> Trait
         {
-            get { return Trait; }
-            private set
-            {
-                Trait = new List<string> {
+            get {
+                return Trait = new List<string> {
             "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.",
             "The common folk love me for my kindness and generosity.",
             "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.",
@@ -23,14 +21,13 @@ namespace CharacterJam
             "My favor, once lost, is lost forever.",
             "If you do me an injury, I will crush you, ruin your name, and salt your fields."};
             }
+            private set{}
         }
 
         public List<string> Ideal
         {
-            get { return Ideal; }
-            private set
-            {
-                Ideal = new List<string>{
+            get {
+                return Ideal = new List<string>{
             "Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)",
             "Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)",
             "Independence. I must prove that I can handle myself without the coddling of my family. (Chaotic)",
@@ -38,14 +35,12 @@ namespace CharacterJam
             "Family. Blood runs thicker than water. (Any)",
             "Noble Obligation. It is my duty to protect and care for the people beneath me. (Good)"};
             }
+            private set{}
         }
 
         public List<string> Bond
         {
-            get { return Bond; }
-            private set
-            {
-                Bond = new List<string> {
+            get { return Bond = new List<string> {
             "I will face any challenge to win the approval of my family.",
             "My house’s alliance with another noble family must be sustained at all costs.",
             "Nothing is more important than the other members of my family.",
@@ -53,14 +48,12 @@ namespace CharacterJam
             "My loyalty to my sovereign is unwavering.",
             "The common folk must see me as a hero o f the people."};
             }
+            private set{}
         }
 
         public List<string> Flaw
         {
-            get { return Flaw; }
-            private set
-            {
-                Flaw = new List<string>{
+            get { return Flaw = new List<string>{
             "I secretly believe that everyone is beneath me.",
             "I hide a truly scandalous secret that could ruin my family forever.",
             "I too often hear veiled insults and threats in every word addressed to me, and I’m quick to anger.",
@@ -68,10 +61,12 @@ namespace CharacterJam
             "In fact, the world does revolve around me.",
             "By my words and actions, I often bring shame to my family." };
             }
+            private set
+            {}
         }
 
-        public Skills Skillz { get { return Skillz; } private set { Skillz = new Skills { History = 2, Persusion = 2 }; } } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz; } private set { Toolz = new Tools { GamingSet = 1 }; } }
-        public List<string> Language { get { return Language; } private set { Language = new List<string> { "One Languages of your Choice" }; } } //make random?
+        public Skills Skillz { get { return Skillz = new Skills { History = 2, Persusion = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { GamingSet = 1 }; } private set {} }
+        public List<string> Language { get { return Language = new List<string> { "One Languages of your Choice" }; } private set {} } //make random?
     }
 }

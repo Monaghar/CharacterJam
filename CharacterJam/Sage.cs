@@ -10,10 +10,8 @@ namespace CharacterJam
     {
         public List<string> Specialty
         {
-            get { return Specialty; }
-            private set
-            {
-                Specialty = new List<string> {
+            get {
+                return Specialty = new List<string> {
             "Alchemist",
             "Astronomer",
             "Discredited academic",
@@ -23,14 +21,12 @@ namespace CharacterJam
             "Wizard’s apprentice",
             "Scribe"};
             }
+            private set{}
         }
 
         public List<string> Trait
         {
-            get { return Trait; }
-            private set
-            {
-                Trait = new List<string> {
+            get { return Trait = new List<string> {
             "I use polysyllabic words that convey the impression of great erudition.",
             "I've read every book in the world’s greatest libraries— or I like to boast that I have.",
             "I'm used to helping out those who aren’t as smart as I am, and I patiently explain anything and everything to others.",
@@ -40,14 +36,13 @@ namespace CharacterJam
             "I am horribly, horribly awkward in social situations.",
             "I’m convinced that people are always trying to steal my secrets."};
             }
+            private set{}
         }
 
         public List<string> Ideal
         {
-            get { return Ideal; }
-            private set
-            {
-                Ideal = new List<string>{
+            get {
+                return Ideal = new List<string>{
             "Knowledge. The path to power and self-improvement is through knowledge. (Neutral)",
             "Beauty. What is beautiful points us beyond itself toward what is true. (Good)",
             "Logic. Emotions must not cloud our logical thinking. (Lawful)",
@@ -55,14 +50,12 @@ namespace CharacterJam
             "Power. Knowledge is the path to power and domination. (Evil)",
             "Self-Improvement. The goal of a life of study is the betterment of oneself. (Any)"};
             }
+            private set{}
         }
 
         public List<string> Bond
         {
-            get { return Bond; }
-            private set
-            {
-                Bond = new List<string> {
+            get { return Bond = new List<string> {
             "It is my duty to protect my students.",
             "I have an ancient text that holds terrible secrets that must not fall into the wrong hands.",
             "I work to preserve a library, university, scriptorium, or monastery.",
@@ -70,14 +63,12 @@ namespace CharacterJam
             "I've been searching my whole life for the answer to a certain question.",
             "I sold my soul for knowledge. I hope to do great deeds and win it back."};
             }
+            private set{}
         }
 
         public List<string> Flaw
         {
-            get { return Flaw; }
-            private set
-            {
-                Flaw = new List<string>{
+            get { return Flaw = new List<string>{
             "I am easily distracted by the promise of information.",
             "Most people scream and run when they see a demon. I stop and take notes on its anatomy.",
             "Unlocking an ancient mystery is worth the price of a civilization.",
@@ -85,9 +76,10 @@ namespace CharacterJam
             "I speak without really thinking through my words, invariably insulting others.",
             "I can’t keep a secret to save my life, or anyone else’s." };
             }
+            private set{}
         }
 
-        public Skills Skillz { get { return Skillz; } private set { Skillz = new Skills { Arcana = 2, History = 2 }; } } // 2 is prof bonus at lvl 1 
-        public List<string> Language { get { return Language; } private set { Language = new List<string> { "Two Languages of your Choice" }; } } //make random?
+        public Skills Skillz { get { return Skillz = new Skills { Arcana = 2, History = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
+        public List<string> Language { get { return Language = new List<string> { "Two Languages of your Choice" }; } private set {} } //make random?
     }
 }

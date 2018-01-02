@@ -10,10 +10,7 @@ namespace CharacterJam
     {
         public List<string> Trait
         {
-            get { return Trait; }
-            private set
-            {
-                Trait = new List<string> {
+            get { return Trait = new List<string> {
             "I hide scraps of food and trinkets away in my pockets.",
             "I ask a lot of questions.",
             "I like to squeeze into small places where no one else can get to me.",
@@ -23,14 +20,13 @@ namespace CharacterJam
             "I don’t like to bathe.",
             "I bluntly say what other people are hinting at or hiding."};
             }
+            private set{}
         }
 
         public List<string> Ideal
         {
-            get { return Ideal; }
-            private set
-            {
-                Ideal = new List<string>{
+            get {
+                return Ideal = new List<string>{
             "Respect. All people, rich or poor, deserve respect. (Good)",
             "Community. We have to take care of each other, because no one else is going to do it. (Lawful)",
             "Change. The low are lifted up, and the high and mighty are brought down. Change is the nature of things. (Chaotic)",
@@ -38,14 +34,12 @@ namespace CharacterJam
             "People. I help the people who help me—that’s what keeps us alive. (Neutral)",
             "Aspiration. I'm going to prove that I'm worthy of a better life."};
             }
+            private set{}
         }
 
         public List<string> Bond
         {
-            get { return Bond; }
-            private set
-            {
-                Bond = new List<string> {
+            get { return Bond = new List<string> {
             "My town or city is my home, and I’ll fight to defend it.",
             "I sponsor an orphanage to keep others from enduring what I was forced to endure.",
             "I owe my survival to another urchin who taught me to live on the streets.",
@@ -53,14 +47,13 @@ namespace CharacterJam
             "I escaped my life of poverty by robbing an important person, and I’m wanted for it.",
             "No one else should have to endure the hardships I’ve been through."};
             }
+            private set{}
         }
 
         public List<string> Flaw
         {
-            get { return Flaw; }
-            private set
-            {
-                Flaw = new List<string>{
+            get {
+                return Flaw = new List<string>{
             "If I'm outnumbered, I will run away from a fight.",
             "Gold seems like a lot of money to me, and I’ll do just about anything for more of it.",
             "I will never fully trust anyone other than myself.",
@@ -68,9 +61,10 @@ namespace CharacterJam
             "It’s not stealing if I need it more than someone else.",
             "People who can't take care of themselves get what they deserve." };
             }
+            private set{}
         }
 
-        public Skills Skillz { get { return Skillz; } private set { Skillz = new Skills { SleightOfHand = 2, Stealth = 2 }; } } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz; } private set { Toolz = new Tools { DisguiseKit = 1, ThievesTools = 1 }; } }
+        public Skills Skillz { get { return Skillz = new Skills { SleightOfHand = 2, Stealth = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { DisguiseKit = 1, ThievesTools = 1 }; } private set {} }
     }
 }
