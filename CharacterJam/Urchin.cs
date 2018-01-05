@@ -8,7 +8,7 @@ namespace CharacterJam
 {
     public class Urchin : Background
     {
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {
             "I hide scraps of food and trinkets away in my pockets.",
@@ -20,10 +20,10 @@ namespace CharacterJam
             "I don’t like to bathe.",
             "I bluntly say what other people are hinting at or hiding."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get {
                 return Ideal = new List<string>{
@@ -34,10 +34,10 @@ namespace CharacterJam
             "People. I help the people who help me—that’s what keeps us alive. (Neutral)",
             "Aspiration. I'm going to prove that I'm worthy of a better life."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "My town or city is my home, and I’ll fight to defend it.",
@@ -47,10 +47,10 @@ namespace CharacterJam
             "I escaped my life of poverty by robbing an important person, and I’m wanted for it.",
             "No one else should have to endure the hardships I’ve been through."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get {
                 return Flaw = new List<string>{
@@ -61,10 +61,14 @@ namespace CharacterJam
             "It’s not stealing if I need it more than someone else.",
             "People who can't take care of themselves get what they deserve." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { SleightOfHand = 2, Stealth = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
+        public override Skills Skillz { get { return Skillz = new Skills { SleightOfHand = 2, Stealth = 2 }; } set {} } // 2 is prof bonus at lvl 1 
         public Tools Toolz { get { return Toolz = new Tools { DisguiseKit = 1, ThievesTools = 1 }; } private set {} }
+        public override string ToString()
+        {
+            return "Background: Urchin";
+        }
     }
 }

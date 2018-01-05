@@ -17,8 +17,12 @@ namespace CharacterJam
         public Stats Stats { get; set; }
         public Skills Skills { get; set; }
         public Tools Tools { get; set; }
-        public Lifestyle Lifestyle { get; set; }
-        public Alignment Alignment { get; set; }
+        public string Lifestyle { get; set; }
+        public string Alignment { get; set; }
         public Background Background { get; set; }
+        public string Trait { get; set; }
+        public string Ideal { get; set; }
+        public string Bond { get; set; }
+        public string Flaw { get; set; }
     }
 }

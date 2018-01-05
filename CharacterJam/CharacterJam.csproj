@@ -74,6 +74,7 @@
     <Compile Include="LightfootHalfling.cs" />
     <Compile Include="Monk.cs" />
     <Compile Include="MountainDwarf.cs" />
+    <Compile Include="Names.cs" />
     <Compile Include="Noble.cs" />
     <Compile Include="Outlander.cs" />
     <Compile Include="Paladin.cs" />

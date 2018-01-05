@@ -26,7 +26,7 @@ namespace CharacterJam
             private set{}
         }
 
-        public List<string> Trait
+        public override List<string> Trait
         {
             get {
                 return Trait = new List<string> {
@@ -39,10 +39,10 @@ namespace CharacterJam
             "I feel far more comfortable around animals than people.",
             "I was, in fact, raised by wolves."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get {
                 return Ideal = new List<string>{
@@ -53,10 +53,10 @@ namespace CharacterJam
             "Nature. The natural world is more important than all the constructs of civilization. (Neutral)",
             "Glory. I must earn glory in battle, for myself and my clan. (Any)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get {
                 return Bond = new List<string> {
@@ -67,10 +67,10 @@ namespace CharacterJam
             "I suffer awful visions of a coming disaster and will do anything to prevent it.",
             "It is my duty to provide children to sustain my tribe."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "I am too enamored of ale, wine, and other intoxicants.",
@@ -80,11 +80,15 @@ namespace CharacterJam
             "Violence is my answer to almost any challenge.",
             "Don’t expect me to save those who can’t save themselves. It is nature’s way that the strong thrive and the weak perish." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { Athletics = 2, Survival = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { MusicalInstrument = 1 }; } private set {} }
-        public List<string> Language { get { return Language = new List<string> { "One Languages of your Choice" }; } private set {} } //make random?
+        public override Skills Skillz { get { return Skillz = new Skills { Athletics = 2, Survival = 2 }; } set {} } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { MusicalInstrument = 1 }; } set {} }
+        public List<string> Language { get { return Language = new List<string> { "One Languages of your Choice" }; } set {} } //make random?
+        public override string ToString()
+        {
+            return "Background: Outlander";
+        }
     }
 }

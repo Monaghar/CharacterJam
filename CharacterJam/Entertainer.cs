@@ -8,7 +8,7 @@ namespace CharacterJam
 {
     class Entertainer : Background
     {
-        public List<string> Trait
+        public override List<string> Trait
         {
             get {
                 return Trait = new List<string> {
@@ -21,10 +21,10 @@ namespace CharacterJam
             "I’ll settle for nothing less than perfection.",
             "I change my mood or my mind as quickly as I change key in a song."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get { return Ideal = new List<string>{
             "Beauty. When I perform, I make the world better than it was. (Good)",
@@ -34,10 +34,10 @@ namespace CharacterJam
             "People. I like seeing the smiles on people’s faces when I perform. That’s all that matters. (Neutral)",
             "Honesty. Art should reflect the soul; it should come from within and reveal who we really are. (Any)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "My instrument is my most treasured possession, and it reminds me of someone I love.",
@@ -47,10 +47,10 @@ namespace CharacterJam
             "I will do anything to prove myself superior to my hated rival.",
             "I would do anything for the other members of my old troupe."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "I’ll do anything to win fame and renown.",
@@ -60,10 +60,14 @@ namespace CharacterJam
             "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble.",
             "Despite my best efforts, I am unreliable to my friends." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { Acrobatics = 2, Performance = 2 }; }  private set {}} // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { DisguiseKit = 1, MusicalInstrument = 1 }; }  private set {}}
+        public override Skills Skillz { get { return Skillz = new Skills { Acrobatics = 2, Performance = 2 }; }  set {}} // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { DisguiseKit = 1, MusicalInstrument = 1 }; }  set {}}
+        public override string ToString()
+        {
+            return "Background: Entertainer";
+        }
     }
 }

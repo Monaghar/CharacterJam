@@ -16,8 +16,8 @@ namespace CharacterJam
         Stats Stats { get; }
         Skills Skills { get; }
         Tools Tools { get; }
-        Lifestyle Lifestyle { get; }
-        Alignment Alignment { get; }
+        string Lifestyle { get; }
+        string Alignment { get; }
         //Background Background { get; }
     }
 }

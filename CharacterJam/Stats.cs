@@ -26,6 +26,7 @@ namespace CharacterJam
                    this.Charisma.ToString();
         }
     }
+
     public struct Skills
     {
         public int Acrobatics { get; set; }
@@ -61,27 +62,42 @@ namespace CharacterJam
         public int ThievesTools { get; set; }
     }
 
-    public enum Lifestyle
+    public class Lifestyles
     {
-        Wretched,
-        Squalid,
-        Poor,
-        Modest,
-        Cofortable,
-        Wealthy,
-        Aristocratic
+        public List<string> Lifestyle
+        {
+            get
+            {
+                return Lifestyle = new List<string>{
+            "Wretched",
+            "Squalid",
+            "Poor",
+            "Modest",
+            "Cofortable",
+            "Wealthy",
+            "Aristocratic" };
+            }
+            set { }
+        }
     }
 
-    public enum Alignment
+    public static class Alignments
     {
-        LawfulGood,
-        LawfulNeutral,
-        LawfulEvil,
-        NeutralGood,
-        TrueNeutral,
-        NeutralEvil,
-        ChoticGood,
-        ChaoticNeutral,
-        ChaoticEvil
+        public static List<string> Alignment
+        {
+            get { return Alignment = new List<string>{
+            "LawfulGood",
+            "LawfulNeutral",
+            "LawfulEvil",
+            "NeutralGood",
+            "TrueNeutral",
+            "NeutralEvil",
+            "ChoticGood",
+            "ChaoticNeutral",
+            "ChaoticEvil"}; }
+            set { }
+        }
     }
+
+    //public static class 
 }

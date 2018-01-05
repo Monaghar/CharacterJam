@@ -8,7 +8,7 @@ namespace CharacterJam
 {
     class Criminal : Background
     {
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {
             "I always have a plan for when things go wrong.",
@@ -20,10 +20,10 @@ namespace CharacterJam
             "The best way to get me to do something is to tell me i can't do it.",
             "I blow up at the slightest insult."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get { return Ideal = new List<string>{
             "Honor. I don’t steal from others in the trade. (Lawful)",
@@ -33,10 +33,10 @@ namespace CharacterJam
             "People. I’m loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)",
             "Redemption. There’s a spark of good in everyone. (Good)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "I’m trying to pay off an old debt I owe to a generous benefactor.",
@@ -46,10 +46,10 @@ namespace CharacterJam
             "I’m guilty of a terrible crime. I hope I can redeem myself for it.",
             "Someone I loved died because of a mistake I made. That will never happen again."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "When I see something valuable, I can’t think about anything but how to steal it.",
@@ -59,10 +59,14 @@ namespace CharacterJam
             "I turn tail and run when things look bad.",
             "An innocent person is in prison for a crime that I committed. I’m okay with that." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { Deception = 2, Stealth = 2 };  ; } private set {} } // 2 is prof bonus at lvl 1 
-        public  Tools Toolz { get { return Toolz = new Tools { GamingSet = 1, ThievesTools = 1 }; ; } private set {} }
+        public override Skills Skillz { get { return Skillz = new Skills { Deception = 2, Stealth = 2 };  ; } set {} } // 2 is prof bonus at lvl 1 
+        public  Tools Toolz { get { return Toolz = new Tools { GamingSet = 1, ThievesTools = 1 }; ; } set {} }
+        public override string ToString()
+        {
+            return "Background: Criminal";
+        }
     }
 }

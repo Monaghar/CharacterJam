@@ -20,10 +20,10 @@ namespace CharacterJam
             "I was the caretaker of an ancient ruin or relic.",
             "I was a pilgrim in search of a person, place, or relic of spiritual significance."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {"I’ve been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.",
             "I am utterly serene, even in the face of disaster.",
@@ -34,10 +34,10 @@ namespace CharacterJam
             "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.",
             "I am working on a grand philosophical theory and love sharing my ideas."};
         }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get { return Ideal = new List<string>{
             "Greater Good. My gifts are meant to be shared with all, not used for my own benefit. (Good)",
@@ -47,10 +47,10 @@ namespace CharacterJam
             "Live and Let Live. Meddling in the affairs o f others only causes trouble. (Neutral)",
             "Self-Knowledge. If you know yourself, there’s nothing left to know. (Any)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get {
                 return Bond = new List<string> {
@@ -61,10 +61,10 @@ namespace CharacterJam
             "Should my discovery come to light, it could bring ruin to the world.",
             "My isolation gave me great insight into a great evil that only I can destroy."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "Now that I've returned to the world, I enjoy its delights a little too much.",
@@ -74,10 +74,14 @@ namespace CharacterJam
             "I’d risk too much to uncover a lost bit of knowledge.",
             "I like keeping secrets and won’t share them with anyone." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { Medicine = 2, Religion = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { HerbalismKit = 1 }; } private set {} }
+        public override Skills Skillz { get { return Skillz = new Skills { Medicine = 2, Religion = 2 }; } set {} } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { HerbalismKit = 1 }; } set {} }
+        public override string ToString()
+        {
+            return "Background: Hermit";
+        }
     }
 }

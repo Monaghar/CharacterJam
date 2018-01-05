@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Acolyte : Background
+    public class Acolyte : Background
     {
-        //public List<string> Trait { get; set; }
 
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {
             "I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example.",
@@ -25,7 +24,7 @@ namespace CharacterJam
             set {}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get { return Ideal = new List<string>{
             "Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)",
@@ -35,10 +34,10 @@ namespace CharacterJam
             "Faith. I trust that my deity will guide my actions, I have faith that if I work hard, things will go well. (Lawful)",
             "Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "I would die to recover an ancient relic of my faith that was lost long ago.",
@@ -48,10 +47,10 @@ namespace CharacterJam
             "I will do anything to protect the temple where I served.",
             "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "I judge others harshly, and myself even more severely.",
@@ -61,10 +60,14 @@ namespace CharacterJam
             "I am suspicious of strangers and expect the worst of them.",
             "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { Insight = 2, Religion = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
-        public List<string> Language { get { return Language = new List<string> { "Two Languages of your Choice" }; } private set {} } // make two random?
+        public override Skills Skillz { get { return Skillz = new Skills { Insight = 2, Religion = 2 }; } set {} } // 2 is prof bonus at lvl 1 
+        public List<string> Language { get { return Language = new List<string> { "Two Languages of your Choice" }; } set {} } // make two random?
+        public override string ToString()
+        {
+            return "Background: Acolyte";
+        }
     }
 }

@@ -20,10 +20,10 @@ namespace CharacterJam
             "Standard bearer",
             "Support staff"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {
             "I'm always polite and respectful.",
@@ -35,10 +35,10 @@ namespace CharacterJam
             "I have a crude sense of humor.",
             "I face problems head-on. A simple, direct solution is the best path to success."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get { return Ideal = new List<string>{
             "Greater Good. Our lot is to lay down our lives in defense of others. (Good)",
@@ -48,11 +48,10 @@ namespace CharacterJam
             "Live and Let Live. Ideals aren’t worth killing over or going to war for. (Neutral)",
             "Nation. My city, nation, or people are all that matter. (Any)"};
             }
-            private set
-            {}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "I would still lay down my life for the people I served with.",
@@ -62,10 +61,10 @@ namespace CharacterJam
             "Those who fight beside me are those worth dying for.",
             "I fight for those who cannot fight for themselves."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get {
                 return Flaw = new List<string>{
@@ -76,11 +75,14 @@ namespace CharacterJam
             "I obey the law, even if the law causes misery.",
             "I’d rather eat my armor than admit when I’m wrong." };
             }
-            private set
-            {}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { Athletics = 2, Insight = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
+        public override Skills Skillz { get { return Skillz = new Skills { Athletics = 2, Insight = 2 }; } set {} } // 2 is prof bonus at lvl 1 
         public Tools Toolz { get { return Toolz = new Tools { NavigatorsTools = 1, GamingSet = 1 }; } private set {} }
+        public override string ToString()
+        {
+            return "Background: Soldier";
+        }
     }
 }

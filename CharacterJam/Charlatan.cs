@@ -18,10 +18,10 @@ namespace CharacterJam
             "I run sleight-of-hand cons on street corners.",
             "I convince people that worthless junk is worth their hard-earned money."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {
             "I fall in and out of love easily, and am always pursuing someone.",
@@ -33,10 +33,10 @@ namespace CharacterJam
             "I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment.",
             "I pocket anything I see that might have some value."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get { return Ideal = new List<string>{
             "Independence. I am a free spirit— no one tells me what to do. (Chaotic)",
@@ -46,10 +46,10 @@ namespace CharacterJam
             "Friendship. Material goods come and go. Bonds of friendship last forever. (Good)",
             "Aspiration. I’m determined to make something of myself. (Any)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about.",
@@ -59,10 +59,10 @@ namespace CharacterJam
             "A powerful person killed someone I love. Some day soon, I’ll have my revenge.",
             "I swindled and ruined a person who didn’t deserve it. I seek to atone for my misdeeds but might never be able to forgive myself."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "I can’t resist a pretty face.",
@@ -72,10 +72,14 @@ namespace CharacterJam
             "I can’t resist swindling people who are more powerful than me.",
             "I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { Deception = 2, SleightOfHand = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { DisguiseKit = 1, ForgeryKit = 1 }; } private set {} } 
+        public override Skills Skillz { get { return Skillz = new Skills { Deception = 2, SleightOfHand = 2 }; } set {} } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { DisguiseKit = 1, ForgeryKit = 1 }; } set {} }
+        public override string ToString()
+        {
+            return "Background: Charlatan";
+        }
     }
 }

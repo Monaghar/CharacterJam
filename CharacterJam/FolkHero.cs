@@ -8,7 +8,7 @@ namespace CharacterJam
 {
     class FolkHero : Background
     {
-        public List<string> DefiningEvent
+        public  List<string> DefiningEvent
         {
             get {
                 return DefiningEvent = new List<string> {
@@ -23,10 +23,10 @@ namespace CharacterJam
             "A celestial, fey, or similar creature gave me a blessing or revealed my secret origin.",
             "Recruited into a lord’s army, I rose to leadership and was commended for my heroism."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {
             "I judge people by their actions, not their words.",
@@ -38,10 +38,10 @@ namespace CharacterJam
             "I misuse long words in an attempt to sound smarter.",
             "I get bored easily. When am I going to get on with my destiny?"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get {
                 return Ideal = new List<string>{
@@ -52,10 +52,10 @@ namespace CharacterJam
             "Sincerity. There’s no good in pretending to be something I’m not. (Neutral)",
             "Destiny. Nothing and no one can steer me away from my higher calling. (Any)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get {
                 return Bond = new List<string> {
@@ -66,10 +66,10 @@ namespace CharacterJam
             "I protect those who cannot protect themselves.",
             "I wish my childhood sweetheart had come with me to pursue my destiny."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "The tyrant who rules my land will stop at nothing to see me killed.",
@@ -79,10 +79,14 @@ namespace CharacterJam
             "Secretly, I believe that things would be better if I were a tyrant lording over the land.",
             "I have trouble trusting in my allies." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { AnimalHandling = 2, Survival = 2 }; } private set {} }  // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { ArtisansTools = 1, NavigatorsTools = 1 }; } private set { } }
+        public override Skills Skillz { get { return Skillz = new Skills { AnimalHandling = 2, Survival = 2 }; } set {} }  // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { ArtisansTools = 1, NavigatorsTools = 1 }; } set { } }
+        public override string ToString()
+        {
+            return "Background: Folk Hero";
+        }
     }
 }

@@ -33,10 +33,10 @@ namespace CharacterJam
             "Guild Merchant",
             "Shipwrights and sailmakers"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {
             "I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.",
@@ -48,10 +48,10 @@ namespace CharacterJam
             "I don’t part with my money easily and will haggle tirelessly to get the best deal possible.",
             "I’m well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven’t heard of me."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get { return Ideal = new List<string>{
             "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization. (Lawful)",
@@ -61,10 +61,10 @@ namespace CharacterJam
             "People. I’m committed to the people I care about, not to ideals. (Neutral)",
             "Aspiration. I work hard to be the best there is at my craft."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "The workshop where I learned my trade is the most important place in the world to me.",
@@ -74,10 +74,10 @@ namespace CharacterJam
             "One day I will return to my guild and prove that I am the greatest artisan of them all.",
             "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get {
                 return Flaw = new List<string>{
@@ -88,10 +88,14 @@ namespace CharacterJam
             "I would kill to acquire a noble title.",
             "I’m horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I’m surrounded by rivals." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { AnimalHandling = 2, Survival = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { ArtisansTools = 1, NavigatorsTools = 1 }; } private set {} }
+        public override Skills Skillz { get { return Skillz = new Skills { AnimalHandling = 2, Survival = 2 }; } set {} } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { ArtisansTools = 1, NavigatorsTools = 1 }; } set {} }
+        public override string ToString()
+        {
+            return "Background: Guild Artisan";
+        }
     }
 }

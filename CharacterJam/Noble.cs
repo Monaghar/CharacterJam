@@ -8,7 +8,7 @@ namespace CharacterJam
 {
     class Noble : Background
     {
-        public List<string> Trait
+        public override List<string> Trait
         {
             get {
                 return Trait = new List<string> {
@@ -21,10 +21,10 @@ namespace CharacterJam
             "My favor, once lost, is lost forever.",
             "If you do me an injury, I will crush you, ruin your name, and salt your fields."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get {
                 return Ideal = new List<string>{
@@ -35,10 +35,10 @@ namespace CharacterJam
             "Family. Blood runs thicker than water. (Any)",
             "Noble Obligation. It is my duty to protect and care for the people beneath me. (Good)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "I will face any challenge to win the approval of my family.",
@@ -48,10 +48,10 @@ namespace CharacterJam
             "My loyalty to my sovereign is unwavering.",
             "The common folk must see me as a hero o f the people."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "I secretly believe that everyone is beneath me.",
@@ -61,12 +61,15 @@ namespace CharacterJam
             "In fact, the world does revolve around me.",
             "By my words and actions, I often bring shame to my family." };
             }
-            private set
-            {}
+             set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { History = 2, Persusion = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { GamingSet = 1 }; } private set {} }
-        public List<string> Language { get { return Language = new List<string> { "One Languages of your Choice" }; } private set {} } //make random?
+        public override Skills Skillz { get { return Skillz = new Skills { History = 2, Persusion = 2 }; } set {} } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return Toolz = new Tools { GamingSet = 1 }; } set {} }
+        public List<string> Language { get { return Language = new List<string> { "One Languages of your Choice" }; } set {} } //make random?
+        public override string ToString()
+        {
+            return "Background: Noble";
+        }
     }
 }

@@ -62,6 +62,7 @@ namespace CharacterJam
             int r = rnd.Next(classList.Count);
             return classList[r];
         }
+
         public static Background RollBackground(Random rnd)
         {
             var acolyte = new Acolyte();
@@ -85,18 +86,33 @@ namespace CharacterJam
             return BackgroundList[r];
         }
 
-        //public static string RollTrait(Random rnd)
-        //{
-        //    var Trait = new List<string> {
-        //    "I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example.",
-        //    "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.",
-        //    "I see omens in every event and action. The gods try to speak to us, we just need to listen",
-        //    "Nothing can shake my optimistic attitude.",
-        //    "I quote (or misquote) sacred texts and proverbs in almost every situation.",
-        //    "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.",
-        //    "I've enjoyed fine food, drink, and high society among my temple’s elite. Rough living grates on me.",
-        //    "I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world."};
-        //    return Trait[rnd.Next(Trait.Count())];
-        //}
+        public static string RollLifeStyle(Random rnd)
+        {
+            Lifestyles life = new Lifestyles();
+            return life.Lifestyle[rnd.Next(life.Lifestyle.Count)];
+        }
+
+        public static string RollAlignment(Random rnd)
+        {
+            return Alignments.Alignment[rnd.Next(Alignments.Alignment.Count)];
+        }
+
+        public static string RollName(Random rnd)
+        {
+            string firstName;
+            int gender = rnd.Next(0, 1);
+            if (gender == 0)
+            {
+                firstName = Names.FemaleNames[rnd.Next(Names.FemaleNames.Count)];
+                return firstName + " " + Names.LastNames[rnd.Next(Names.LastNames.Count)];
+            }
+            if (gender == 1)
+            {
+                firstName = Names.MaleNames[rnd.Next(Names.MaleNames.Count)];
+                return firstName + " " + Names.LastNames[rnd.Next(Names.LastNames.Count)];
+            }
+
+            return "Generate.RollName failed to generate a name";
+        }
     }
 }

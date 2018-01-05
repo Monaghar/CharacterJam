@@ -8,7 +8,7 @@ namespace CharacterJam
 {
     class Sailor: Background
     {
-        public List<string> Trait
+        public override List<string> Trait
         {
             get { return Trait = new List<string> {
             "My friends know they can rely on me, no matter what.",
@@ -20,10 +20,10 @@ namespace CharacterJam
             "My language is as foul as an otyugh nest.",
             "I like a job well done, especially if I can convince someone else to do it."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Ideal
+        public override List<string> Ideal
         {
             get { return Ideal = new List<string>{
             "Respect. The thing that keeps a ship together is mutual respect between captain and crew. (Good)",
@@ -33,10 +33,10 @@ namespace CharacterJam
             "People. I’m committed to my crewmates, not to ideals. (Neutral)",
             "Aspiration. Someday I’ll own my own ship and chart my own destiny. (Any)"};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Bond
+        public override List<string> Bond
         {
             get { return Bond = new List<string> {
             "I’m loyal to my captain first, everything else second.",
@@ -46,10 +46,10 @@ namespace CharacterJam
             "I was cheated out of my fair share of the profits, and I want to get my due.",
             "Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine."};
             }
-            private set{}
+            set{}
         }
 
-        public List<string> Flaw
+        public override List<string> Flaw
         {
             get { return Flaw = new List<string>{
             "I follow orders, even if I think they’re wrong.",
@@ -59,10 +59,14 @@ namespace CharacterJam
             "I can’t help but pocket loose coins and other trinkets I come across.",
             "My pride will probably lead to my destruction." };
             }
-            private set{}
+            set{}
         }
 
-        public Skills Skillz { get { return Skillz = new Skills { Athletics = 2, Perception = 2 }; } private set {} } // 2 is prof bonus at lvl 1 
+        public override Skills Skillz { get { return Skillz = new Skills { Athletics = 2, Perception = 2 }; } set {} } // 2 is prof bonus at lvl 1 
         public Tools Toolz { get { return Toolz = new Tools { NavigatorsTools = 1 }; } private set {} }
+        public override string ToString()
+        {
+            return "Background: Sailor";
+        }
     }
 }
