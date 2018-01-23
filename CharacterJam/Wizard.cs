@@ -8,9 +8,9 @@ namespace CharacterJam
 {
     class Wizard : IClass
     {
-        public int HitDie { get { return HitDie = 6; } private set {} }
-        public string ArmorAndWeapons { get { return ArmorAndWeapons = "Daggers, darts, slings, quarterstaffs, light crossbows"; } private set {} }
-        public string SavingThrow { get { return SavingThrow = "Intelligence & Wisdom"; } private set {} }
+        public int HitDie { get { return 6; } }
+        public string ArmorAndWeapons { get { return "Daggers, darts, slings, quarterstaffs, light crossbows"; } }
+        public string SavingThrow { get { return "Intelligence & Wisdom"; } }
         public override string ToString()
         {
             return "Wizard";

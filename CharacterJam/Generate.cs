@@ -8,6 +8,59 @@ namespace CharacterJam
 {
     public static class Generate
     {
+        static DarkElf Delf = new DarkElf();
+        static Dragonborn DBorn = new Dragonborn();
+        static ForestGnome FGnome = new ForestGnome();
+        static HalfElf Halfelf = new HalfElf();
+        static HalfOrc Horc = new HalfOrc();
+        static HighElf Helf = new HighElf();
+        static HillDwarf Hdwarf = new HillDwarf();
+        static LightfootHalfling LHalfling = new LightfootHalfling();
+        static MountainDwarf Mdwarf = new MountainDwarf();
+        static RockGnome Rgnome = new RockGnome();
+        static StoutHalfling Shalfling = new StoutHalfling();
+        static Tiefling Tief = new Tiefling();
+        static WoodElf Welf = new WoodElf();
+        static List<IRace> raceList = new List<IRace>()
+            {
+                Delf, DBorn, FGnome, Halfelf, Horc, Helf, Hdwarf, LHalfling, Mdwarf, Rgnome, Shalfling, Tief, Welf
+            };
+         
+        static Barbarian Barb = new Barbarian();
+        static Bard Bard = new Bard();
+        static Cleric Cleric = new Cleric();
+        static Druid Druid = new Druid();
+        static Fighter Fight = new Fighter();
+        static Monk Monk = new Monk();
+        static Paladin Paladin = new Paladin();
+        static Ranger Ranger = new Ranger();
+        static Rogue Rogue = new Rogue();
+        static Sorcerer Sorc = new Sorcerer();
+        static Warlock Warlok = new Warlock();
+        static Wizard Wiz = new Wizard();
+        static List<IClass> classList = new List<IClass>()
+            {
+                Barb, Bard, Cleric, Druid, Fight, Monk, Paladin, Ranger, Rogue, Sorc, Warlok, Wiz
+            };
+
+        static Acolyte acolyte = new Acolyte();
+        static Charlatan charlatan = new Charlatan();
+        static Criminal criminal = new Criminal();
+        static Entertainer entertainer = new Entertainer();
+        static FolkHero folkHero = new FolkHero();
+        static GuildArtisan guildArtisan = new GuildArtisan();
+        static Hermit hermit = new Hermit();
+        static Noble noble = new Noble();
+        static Outlander outlander = new Outlander();
+        static Sage sage = new Sage();
+        static Sailor sailor = new Sailor();
+        static Soldier soldier = new Soldier();
+        static Urchin urchin = new Urchin();
+        static List<Background> BackgroundList = new List<Background>()
+            {
+                acolyte, charlatan, criminal, entertainer, folkHero, guildArtisan, hermit, noble, outlander, sage, sailor, soldier, urchin
+            };
+
         public static List<int> RollStats(Random rnd)
         {
             List<int> statArray = new List<int>();
@@ -20,81 +73,35 @@ namespace CharacterJam
 
         public static IRace RollRace(Random rnd)
         {
-            var Delf = new DarkElf();
-            var DBorn = new Dragonborn();
-            var FGnome = new ForestGnome();
-            var Halfelf = new HalfElf();
-            var Horc = new HalfOrc();
-            var Helf = new HighElf();
-            var Hdwarf = new HillDwarf();
-            var LHalfling = new LightfootHalfling();
-            var Mdwarf = new MountainDwarf();
-            var Rgnome = new RockGnome();
-            var Shalfling = new StoutHalfling();
-            var Tief = new Tiefling();
-            var Welf = new WoodElf();
-            var raceList = new List<IRace>()
-            {
-                Delf, DBorn, FGnome, Halfelf, Horc, Helf, Hdwarf, LHalfling, Mdwarf, Rgnome, Shalfling, Tief, Welf
-            };
             int r = rnd.Next(raceList.Count);
             return raceList[r];
         }
 
         public static IClass RollClass(Random rnd)
         {
-            var Barb = new Barbarian();
-            var Bard = new Bard();
-            var Cleric = new Cleric();
-            var Druid = new Druid();
-            var Fight = new Fighter();
-            var Monk = new Monk();
-            var Paladin = new Paladin();
-            var Ranger = new Ranger();
-            var Rogue = new Rogue();
-            var Sorc = new Sorcerer();
-            var Warlok = new Warlock();
-            var Wiz = new Wizard();
-            var classList = new List<IClass>()
-            {
-                Barb, Bard, Cleric, Druid, Fight, Monk, Paladin, Ranger, Rogue, Sorc, Warlok, Wiz
-            };
             int r = rnd.Next(classList.Count);
             return classList[r];
         }
 
         public static Background RollBackground(Random rnd)
         {
-            var acolyte = new Acolyte();
-            var charlatan = new Charlatan();
-            var criminal = new Criminal();
-            var entertainer = new Entertainer();
-            var folkHero = new FolkHero();
-            var guildArtisan = new GuildArtisan();
-            var hermit = new Hermit();
-            var noble = new Noble();
-            var outlander = new Outlander();
-            var sage = new Sage();
-            var sailor = new Sailor();
-            var soldier = new Soldier();
-            var urchin = new Urchin();
-            var BackgroundList = new List<Background>()
-            {
-                acolyte, charlatan, criminal, entertainer, folkHero, guildArtisan, hermit, noble, outlander, sage, sailor, soldier, urchin
-            };
+           
             int r = rnd.Next(BackgroundList.Count);
             return BackgroundList[r];
         }
 
-        public static string RollLifeStyle(Random rnd)
+        public static Lifestyles RollLifeStyle(Random rnd)
         {
-            Lifestyles life = new Lifestyles();
-            return life.Lifestyle[rnd.Next(life.Lifestyle.Count)];
+            Array values = Enum.GetValues(typeof(Lifestyles));
+            Lifestyles thing = (Lifestyles)values.GetValue(rnd.Next(values.Length));
+            return thing;
         }
 
-        public static string RollAlignment(Random rnd)
+        public static Alignments RollAlignment(Random rnd)
         {
-            return Alignments.Alignment[rnd.Next(Alignments.Alignment.Count)];
+            Array values = Enum.GetValues(typeof(Alignments));
+            Alignments thing = (Alignments)values.GetValue(rnd.Next(values.Length));
+            return thing;
         }
 
         public static string RollName(Random rnd)
@@ -114,5 +121,10 @@ namespace CharacterJam
 
             return "Generate.RollName failed to generate a name";
         }
+
+        //public static string RollLanguage(Random rnd)
+        //{
+        //    return background + race language list &random if needed
+        //}
     }
 }

@@ -8,15 +8,15 @@ namespace CharacterJam
 {
     class Dragonborn : IRace
     {
-        public int StrBonus { get { return StrBonus = 2; } private set {} }
-        public int DexBonus { get { return DexBonus = 0; } private set {} }
-        public int ConBonus { get { return ConBonus = 0; } private set {} }
-        public int IntBonus { get { return IntBonus = 0; } private set {} }
-        public int WisBonus { get { return WisBonus = 0; } private set {} }
-        public int ChaBonus { get { return ChaBonus = 1; } private set {} }
-        public int AgeRange { get { return AgeRange = 100; } private set {} }
-        public int Speed { get { return Speed = 30; } private set {} }
-        public string Size { get { return Size = "Medium"; } private set {} }
+        public int StrBonus { get { return 2; } }
+        public int DexBonus { get { return 0; } }
+        public int ConBonus { get { return 0; } }
+        public int IntBonus { get { return 0; } }
+        public int WisBonus { get { return 0; } }
+        public int ChaBonus { get { return 1; } }
+        public int AgeRange { get { return 100; } }
+        public int Speed { get { return 30; } }
+        public string Size { get { return "Medium"; } }
         public override string ToString()
         {
             return "Dragonborn";

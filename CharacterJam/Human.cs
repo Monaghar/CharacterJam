@@ -8,15 +8,15 @@ namespace CharacterJam
 {
     class Human : IRace
     {
-        public int StrBonus { get { return StrBonus = 1; } private set {} }
-        public int DexBonus { get { return DexBonus = 1; } private set {} }
-        public int ConBonus { get { return ConBonus = 1; } private set {} }
-        public int IntBonus { get { return IntBonus = 1; } private set {} }
-        public int WisBonus { get { return WisBonus = 1; ; } private set {} }
-        public int ChaBonus { get { return ChaBonus = 1; } private set {} }
-        public int AgeRange { get { return AgeRange = 100; } private set {} }
-        public int Speed { get { return Speed = 30; } private set {} }
-        public string Size { get { return Size = "Medium"; } private set {} }
+        public int StrBonus { get { return 1; } }
+        public int DexBonus { get { return 1; } }
+        public int ConBonus { get { return 1; } }
+        public int IntBonus { get { return 1; } }
+        public int WisBonus { get { return 1; } }
+        public int ChaBonus { get { return 1; } }
+        public int AgeRange { get { return 100; } }
+        public int Speed { get { return 30; } }
+        public string Size { get { return "Medium"; } }
         public override string ToString()
         {
             return "Human";

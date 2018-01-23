@@ -8,15 +8,15 @@ namespace CharacterJam
 {
     class RockGnome : IRace
     {
-        public int StrBonus { get { return StrBonus = 0; } private set {} }
-        public int DexBonus { get { return DexBonus = 0; } private set {} }
-        public int ConBonus { get { return ConBonus = 0; } private set {} }
-        public int IntBonus { get { return IntBonus = 0; } private set {} }
-        public int WisBonus { get { return WisBonus = 0; } private set {} }
-        public int ChaBonus { get { return ChaBonus = 0; } private set {} }
-        public int AgeRange { get { return AgeRange = 0; } private set {} }
-        public int Speed { get { return Speed = 25; } private set {} }
-        public string Size { get { return Size = "Small"; } private set {} }
+        public int StrBonus { get { return 0; } }
+        public int DexBonus { get { return 0; } }
+        public int ConBonus { get { return 0; } }
+        public int IntBonus { get { return 0; } }
+        public int WisBonus { get { return 0; } }
+        public int ChaBonus { get { return 0; } }
+        public int AgeRange { get { return 0; } }
+        public int Speed { get { return 25; } }
+        public string Size { get { return "Small"; } }
         public override string ToString()
         {
             return "Rock Gnome";

@@ -8,12 +8,12 @@ namespace CharacterJam
 {
     class Druid : IClass
     {
-        public int HitDie { get { return HitDie = 8; } private set {} }
-        public string ArmorAndWeapons { get { return ArmorAndWeapons = "Light and medium armor (nonmetal), shields(nonmetal), " +
-                                                                       "clubs, daggers, darts, javelins, maces, quarterstaffs, " +
-                                                                       "scimitars, sickles, slings, spears";} private set { }}
+        public int HitDie { get { return 8; } }
+        public string ArmorAndWeapons { get { return "Light and medium armor (nonmetal), shields(nonmetal), " +
+                                                     "clubs, daggers, darts, javelins, maces, quarterstaffs, " +
+                                                     "scimitars, sickles, slings, spears";} }
 
-        public string SavingThrow { get { return SavingThrow = "Intelligence & Wisdom"; } private set {} }
+        public string SavingThrow { get { return "Intelligence & Wisdom"; } }
         public override string ToString()
         {
             return "Druid";

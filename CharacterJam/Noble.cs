@@ -11,7 +11,7 @@ namespace CharacterJam
         public override List<string> Trait
         {
             get {
-                return Trait = new List<string> {
+                return new List<string> {
             "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.",
             "The common folk love me for my kindness and generosity.",
             "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.",
@@ -21,13 +21,12 @@ namespace CharacterJam
             "My favor, once lost, is lost forever.",
             "If you do me an injury, I will crush you, ruin your name, and salt your fields."};
             }
-            set{}
         }
 
         public override List<string> Ideal
         {
             get {
-                return Ideal = new List<string>{
+                return new List<string>{
             "Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)",
             "Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)",
             "Independence. I must prove that I can handle myself without the coddling of my family. (Chaotic)",
@@ -35,12 +34,11 @@ namespace CharacterJam
             "Family. Blood runs thicker than water. (Any)",
             "Noble Obligation. It is my duty to protect and care for the people beneath me. (Good)"};
             }
-            set{}
         }
 
         public override List<string> Bond
         {
-            get { return Bond = new List<string> {
+            get { return new List<string> {
             "I will face any challenge to win the approval of my family.",
             "My house’s alliance with another noble family must be sustained at all costs.",
             "Nothing is more important than the other members of my family.",
@@ -48,12 +46,11 @@ namespace CharacterJam
             "My loyalty to my sovereign is unwavering.",
             "The common folk must see me as a hero o f the people."};
             }
-            set{}
         }
 
         public override List<string> Flaw
         {
-            get { return Flaw = new List<string>{
+            get { return new List<string>{
             "I secretly believe that everyone is beneath me.",
             "I hide a truly scandalous secret that could ruin my family forever.",
             "I too often hear veiled insults and threats in every word addressed to me, and I’m quick to anger.",
@@ -61,12 +58,11 @@ namespace CharacterJam
             "In fact, the world does revolve around me.",
             "By my words and actions, I often bring shame to my family." };
             }
-             set{}
         }
 
-        public override Skills Skillz { get { return Skillz = new Skills { History = 2, Persusion = 2 }; } set {} } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { GamingSet = 1 }; } set {} }
-        public List<string> Language { get { return Language = new List<string> { "One Languages of your Choice" }; } set {} } //make random?
+        public override Skills Skillz { get { return new Skills { History = 2, Persusion = 2 }; } } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return new Tools { GamingSet = 1 }; } set {} }
+        public List<string> Language { get { return new List<string> { "One Languages of your Choice" }; }} //make random?
         public override string ToString()
         {
             return "Background: Noble";

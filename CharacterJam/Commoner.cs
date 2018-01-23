@@ -11,7 +11,7 @@ namespace CharacterJam
         public string Name { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
-        public List<string> Languages { get; set; }
+        public string Languages { get; set; }
         public IRace Race { get; set; }
         public IClass Class { get; set; }
         public Stats Stats { get; set; }

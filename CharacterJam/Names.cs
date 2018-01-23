@@ -12,7 +12,7 @@ namespace CharacterJam
         {
             get
             {
-                return MaleNames = new List<string>
+                return new List<string>
                 { "Adran", "Aelar", "Aramil", "Arannis",
                 "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan",
                 "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios",
@@ -38,14 +38,13 @@ namespace CharacterJam
                 "Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront", "Shump", "Thokk", "Akmenos", "Amnon", "Barakas",
                 "Damakos", "Ekemon", "Iados", "Kairon", "Leucis", "Melech", "Mordai", "Morthos", "Pelaios", "Skamos", "Therai"};
             }
-            set { }
         }
 
         public static List<string> FemaleNames
         {
             get
             {
-                return FemaleNames = new List<string>
+                return new List<string>
                 {"Amber", "Artin", "Audhild", "Bardryn",
                 "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda",
                 "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "Ilde", "Liftrasa",
@@ -67,14 +66,13 @@ namespace CharacterJam
                 "Shamil", "Tana", "Waywocket", "Zanna", "Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka", "Shautha", "Sutha", "Vola",
                 "Volen", "Yevelda", "Akta", "Anakis", "Bryseis", "Criella", "Damaia", "Ea", "Kallista", "Lerissa", "Makaria", "Nemeia", "Orianna", "Phelaia", "Rieta"};
             }
-            set { }
         }
 
         public static List<string> LastNames
         {
             get
             {
-                return LastNames = new List<string>
+                return new List<string>
                 {"Balderk", "Battlehammer", "Brawnanvil",
                 "Dankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek",
                 "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln",
@@ -87,7 +85,6 @@ namespace CharacterJam
                 "Falone", "Marivaldi", "Pisacar", "Ramondo", "Myastan", "Yarjerit", "Kimbatuul", "Kerrhylon", "Turnuroth", "Beren", "Daergel", "Folkor", "Garrick", "Nackle",
                 "Murnig", "Ningel", "Raulnor", "Scheppen", "Timbers", "Turen"};
             }
-            set { }
         }
     }
 }

@@ -8,12 +8,12 @@ namespace CharacterJam
 {
     class Bard : IClass
     {
-        public int HitDie { get { return HitDie = 8; } private set {} }
-        public string ArmorAndWeapons { get { return ArmorAndWeapons = "Light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords"; } private set {} }
-        public string SavingThrow { get { return SavingThrow = "Dexterity & Charisma"; } private set {} }
+        public int HitDie { get { return 8; } }
+        public string ArmorAndWeapons { get { return "Light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords"; } }
+        public string SavingThrow { get { return "Dexterity & Charisma"; } }
         public override string ToString()
         {
-            return "Barbarian";
+            return "Bard";
         }
     }
 }

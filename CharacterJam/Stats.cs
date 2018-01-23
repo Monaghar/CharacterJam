@@ -17,7 +17,6 @@ namespace CharacterJam
 
         public override string ToString()
         {
-
             return this.Stregnth.ToString() + ' ' +
                    this.Dexterity.ToString() + ' ' +
                    this.Constitution.ToString() + ' ' +
@@ -62,42 +61,94 @@ namespace CharacterJam
         public int ThievesTools { get; set; }
     }
 
-    public class Lifestyles
+    public enum Lifestyles
     {
-        public List<string> Lifestyle
-        {
-            get
-            {
-                return Lifestyle = new List<string>{
-            "Wretched",
-            "Squalid",
-            "Poor",
-            "Modest",
-            "Cofortable",
-            "Wealthy",
-            "Aristocratic" };
-            }
-            set { }
-        }
+        Wretched,
+        Squalid,
+        Poor,
+        Modest,
+        Cofortable,
+        Wealthy,
+        Aristocratic
+
     }
 
-    public static class Alignments
+    public enum Alignments
     {
-        public static List<string> Alignment
-        {
-            get { return Alignment = new List<string>{
-            "LawfulGood",
-            "LawfulNeutral",
-            "LawfulEvil",
-            "NeutralGood",
-            "TrueNeutral",
-            "NeutralEvil",
-            "ChoticGood",
-            "ChaoticNeutral",
-            "ChaoticEvil"}; }
-            set { }
-        }
+        LawfulGood,
+        LawfulNeutral,
+        LawfulEvil,
+        NeutralGood,
+        TrueNeutral,
+        NeutralEvil,
+        ChaoticGood,
+        ChaoticNeutral,
+        ChaoticEvil
     }
 
-    //public static class 
+    //public static class Alignments
+    //{
+    //    public static List<string> Alignment
+    //    {
+    //        get { return Alignment = new List<string>{
+    //        "LawfulGood",
+    //        "LawfulNeutral",
+    //        "LawfulEvil",
+    //        "NeutralGood",
+    //        "TrueNeutral",
+    //        "NeutralEvil",
+    //        "ChoticGood",
+    //        "ChaoticNeutral",
+    //        "ChaoticEvil"}; }
+    //        set { }
+    //    }
+    //}
+
+    public enum Languages
+    {
+        Common,
+        Dwarvish,
+        Elvish,
+        Giant,
+        Gnomish,
+        Goblin,
+        Halfling,
+        Orc,
+        Abyssal,
+        Celstial,
+        Draconic,
+        DeepSpeech,
+        Infernal,
+        Primordial,
+        Sylvan,
+        Undercommon
+    };
+
+    //public static class Languages
+    //{
+    //    public static List<string> languages
+    //    {
+    //        get
+    //        {
+    //            return languages = new List<string>{
+    //        "Common",
+    //        "Dwarvish",
+    //        "Elvish",
+    //        "Giant",
+    //        "Gnomish",
+    //        "Goblin",
+    //        "Halfling",
+    //        "Orc",
+    //        "Abyssal",
+    //        "Celstial",
+    //        "Draconic",
+    //        "Deep Speech",
+    //        "Infernal",
+    //        "Primordial",
+    //        "Sylvan",
+    //        "Undercommon"};
+    //        }
+    //        set { }
+    //    }
+    //}
 }

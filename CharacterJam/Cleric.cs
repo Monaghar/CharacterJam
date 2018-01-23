@@ -8,9 +8,9 @@ namespace CharacterJam
 {
     class Cleric : IClass
     {
-        public int HitDie { get { return HitDie = 8; } private set {} }
-        public string ArmorAndWeapons { get { return ArmorAndWeapons = "Light and medium armor, shields, simple weapons"; } private set {} }
-        public string SavingThrow { get { return SavingThrow = "Wisdom & Charisma"; } private set {} }
+        public int HitDie { get { return 8; } }
+        public string ArmorAndWeapons { get { return "Light and medium armor, shields, simple weapons"; } }
+        public string SavingThrow { get { return "Wisdom & Charisma"; } }
         public override string ToString()
         {
             return "Cleric";

@@ -11,8 +11,7 @@ namespace CharacterJam
         public List<string> Origin
         {
             get {
-                return
-              Origin = new List<string> {
+                return new List<string> {
             "Forester",
             "Trapper",
             "Homesteader",
@@ -23,13 +22,12 @@ namespace CharacterJam
             "Hunter-gatherer",
             "Tribal marauder",
             "Tribal nomad"}; }
-            private set{}
         }
 
         public override List<string> Trait
         {
             get {
-                return Trait = new List<string> {
+                return new List<string> {
             "I’m driven by a wanderlust that led me away from home.",
             "I watch over my friends as if they were a litter of newborn pups.",
             "I once ran twenty-five miles without stopping to warn to my clan of an approaching orc horde. I’d do it again if I had to.",
@@ -39,13 +37,12 @@ namespace CharacterJam
             "I feel far more comfortable around animals than people.",
             "I was, in fact, raised by wolves."};
             }
-            set{}
         }
 
         public override List<string> Ideal
         {
             get {
-                return Ideal = new List<string>{
+                return new List<string>{
             "Change. Life is like the seasons, in constant change, and we must change with it. (Chaotic)",
             "Greater Good. It is each person’s responsibility to make the most happiness for the whole tribe. (Good)",
             "Honor. If I dishonor myself, I dishonor my whole clan. (Lawful)",
@@ -53,13 +50,12 @@ namespace CharacterJam
             "Nature. The natural world is more important than all the constructs of civilization. (Neutral)",
             "Glory. I must earn glory in battle, for myself and my clan. (Any)"};
             }
-            set{}
         }
 
         public override List<string> Bond
         {
             get {
-                return Bond = new List<string> {
+                return new List<string> {
             "My family, clan, or tribe is the most important thing in my life, even when they are far from me.",
             "An injury to the unspoiled wilderness of my home is an injury to me.",
             "I will bring terrible wrath down on the evildoers who destroyed my homeland.",
@@ -67,12 +63,11 @@ namespace CharacterJam
             "I suffer awful visions of a coming disaster and will do anything to prevent it.",
             "It is my duty to provide children to sustain my tribe."};
             }
-            set{}
         }
 
         public override List<string> Flaw
         {
-            get { return Flaw = new List<string>{
+            get { return new List<string>{
             "I am too enamored of ale, wine, and other intoxicants.",
             "There’s no room for caution in a life lived to the fullest.",
             "I remember every insult I’ve received and nurse a silent resentment toward anyone who’s ever wronged me.",
@@ -80,12 +75,11 @@ namespace CharacterJam
             "Violence is my answer to almost any challenge.",
             "Don’t expect me to save those who can’t save themselves. It is nature’s way that the strong thrive and the weak perish." };
             }
-            set{}
         }
 
-        public override Skills Skillz { get { return Skillz = new Skills { Athletics = 2, Survival = 2 }; } set {} } // 2 is prof bonus at lvl 1 
-        public Tools Toolz { get { return Toolz = new Tools { MusicalInstrument = 1 }; } set {} }
-        public List<string> Language { get { return Language = new List<string> { "One Languages of your Choice" }; } set {} } //make random?
+        public override Skills Skillz { get { return new Skills { Athletics = 2, Survival = 2 }; } } // 2 is prof bonus at lvl 1 
+        public Tools Toolz { get { return new Tools { MusicalInstrument = 1 }; } }
+        public List<string> Language { get { return new List<string> { "One Languages of your Choice" }; } } //make random?
         public override string ToString()
         {
             return "Background: Outlander";

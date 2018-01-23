@@ -11,13 +11,12 @@ namespace CharacterJam
         string Name { get; }
         string Gender { get; }
         int Age { get; }
-        List<string> Languages { get; }
         IRace Race { get; }
         Stats Stats { get; }
         Skills Skills { get; }
         Tools Tools { get; }
-        string Lifestyle { get; }
-        string Alignment { get; }
+        //string Lifestyle { get; }
+        //string Alignment { get; }
         //Background Background { get; }
     }
 }
