@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace CharacterJam
 {
@@ -45,10 +46,15 @@ namespace CharacterJam
             Console.WriteLine("Lifestyle : " + Jeff.Lifestyle);
             Jeff.Name = Generate.RollName(rnd);
             Console.WriteLine("Name: " + Jeff.Name);
-            string fileName = "Characters!!.txt";
-            File.WriteAllText(fileName, "trait: " + Jeff.Trait);
-            string text = File.ReadAllText("side quests.txt");
-            Console.WriteLine(text);
+            //string fileName = "Characters!!.txt";
+            //File.WriteAllText(fileName, "trait: " + Jeff.Trait);
+            //string text = File.ReadAllText("side quests.txt");
+            string json = JsonConvert.SerializeObject(Jeff, Formatting.Indented);
+            //using (StreamWriter filez = new StreamWriter("C://Users//ryan//Desktop//gamez//DD//character.txt", true))
+            //{
+            //    filez.WriteLine(json);
+            //}
+            File.WriteAllText("CharacterJson.txt", json);
             Console.Read();
         }
     }
