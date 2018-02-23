@@ -122,9 +122,14 @@ namespace CharacterJam
             return "Generate.RollName failed to generate a name";
         }
 
-        //public static string RollLanguage(Random rnd)
-        //{
-        //    return background + race language list &random if needed
-        //}
+        public static string RollLanguage(Random rnd, Character steven)
+        {
+            return "Language: " + steven.Background.Language + " " + steven.Race.Language; 
+        }
+
+        public static int RollAge(Random rnd, IRace steven)
+        {
+            return rnd.Next(1, steven.AgeRange);
+        }
     }
 }

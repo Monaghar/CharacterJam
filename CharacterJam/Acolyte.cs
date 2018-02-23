@@ -60,7 +60,7 @@ namespace CharacterJam
         }
 
         public override Skills Skillz { get { return new Skills { Insight = 2, Religion = 2 }; } } // 2 is prof bonus at lvl 1 
-        public override List<string> Language { get { return new List<string> { "Two Languages of your Choice" }; } } // make two random?
+        public override string Language { get { return "Two Languages of your Choice"; } } // make two random?
         public override string ToString()
         {
             return "Background: Acolyte";

@@ -17,6 +17,7 @@ namespace CharacterJam
         public int AgeRange { get { return 425; } }
         public int Speed { get { return 25; } }
         public string Size { get { return "Medium"; } }
+        public string Language { get { return "Dwarvish, Common "; } }
         public override string ToString()
         {
             return "Mountain Dwarf";

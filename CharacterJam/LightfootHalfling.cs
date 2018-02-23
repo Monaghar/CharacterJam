@@ -17,6 +17,7 @@ namespace CharacterJam
         public int AgeRange { get { return 300; } }
         public int Speed { get { return 25; } }
         public string Size { get { return "Small"; } }
+        public string Language { get { return "Halfling, Common "; } }
         public override string ToString()
         {
             return "Lightfoot Halfling";

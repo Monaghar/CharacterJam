@@ -18,6 +18,7 @@ namespace CharacterJam
         public int AgeRange { get { return 250; } }
         public int Speed { get { return 30; } }
         public string Size { get { return "Medium"; } }
+        public string Language { get { return "Elvish, Common, One Extra Language "; } }
         public override string ToString()
         {
             return "Half Elf";

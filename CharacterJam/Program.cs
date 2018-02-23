@@ -46,6 +46,11 @@ namespace CharacterJam
             Console.WriteLine("Lifestyle : " + Jeff.Lifestyle);
             Jeff.Name = Generate.RollName(rnd);
             Console.WriteLine("Name: " + Jeff.Name);
+            Jeff.Age = Generate.RollAge(rnd, Jeff.Race);
+            Console.WriteLine("My Age is: {0}", Jeff.Age);
+            Jeff.Languages = Generate.RollLanguage(rnd, Jeff);
+            Console.WriteLine("I speak: {0}", Jeff.Languages);
+
             //string fileName = "Characters!!.txt";
             //File.WriteAllText(fileName, "trait: " + Jeff.Trait);
             //string text = File.ReadAllText("side quests.txt");
@@ -58,4 +63,4 @@ namespace CharacterJam
             Console.Read();
         }
     }
-}
+} 

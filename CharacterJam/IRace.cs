@@ -17,7 +17,7 @@ namespace CharacterJam
         int Speed { get; }
         string Size { get; }
         int AgeRange { get; }
-
+        string Language { get; }
         //ToDo figure out how to add Race traits
     }
 }

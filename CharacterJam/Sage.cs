@@ -75,7 +75,7 @@ namespace CharacterJam
         }
 
         public override Skills Skillz { get { return new Skills { Arcana = 2, History = 2 }; } } // 2 is prof bonus at lvl 1 
-        public List<string> Language { get { return new List<string> { "Two Languages of your Choice" }; } } //make random?
+        public string Language { get { return "Two Languages of your Choice"; } } //make random?
         public override string ToString()
         {
             return "Background: Sage";

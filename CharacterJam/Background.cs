@@ -13,6 +13,6 @@ namespace CharacterJam
         public virtual List<string> Bond { get; set; }
         public virtual List<string> Flaw { get; set; }
         public virtual Skills Skillz { get; set; }
-        public virtual List<string> Language { get; set; }
+        public virtual string Language { get; set; }
     }
 }
