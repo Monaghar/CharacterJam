@@ -66,7 +66,7 @@ namespace CharacterJam
             List<int> statArray = new List<int>();
             for (int i = 0; i < 6; i++)
             {
-                statArray.Add(rnd.Next(3, 18));
+                statArray.Add(rnd.Next(3, 19));
             }
             return statArray;
         }
