@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Charlatan : Background
+    public class Charlatan : Background
     {
         public List<string> Scam
         {

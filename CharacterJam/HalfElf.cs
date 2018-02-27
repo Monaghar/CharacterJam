@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class HalfElf : IRace
+    public class HalfElf : IRace
     {
         // also pick two other stats by 1
         public int StrBonus { get { return 0; } }

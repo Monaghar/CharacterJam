@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Sage : Background
+    public class Sage : Background
     {
         public List<string> Specialty
         {

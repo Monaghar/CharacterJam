@@ -70,7 +70,6 @@ namespace CharacterJam
         Cofortable,
         Wealthy,
         Aristocratic
-
     }
 
     public enum Alignments

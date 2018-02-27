@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class WoodElf : IRace
+    public class WoodElf : IRace
     {
         public int StrBonus { get { return 0; } }
         public int DexBonus { get { return 2; } }
