@@ -73,9 +73,8 @@ namespace CharacterJam.Tests
             List<int> statArray = new List<int>();
             for (int i = 0; i < 300; i++)
             {
-                statArray.Add(rnd.Next(3, 19));
+                statArray.AddRange(Generate.RollStats(rnd));
             }
-            //i think 15 is right 19-3 but it's probably an off by one error
             for (int x = 3; x < 19; x++)
             {
                 Assert.IsTrue(statArray.Contains(x));
@@ -158,15 +157,18 @@ namespace CharacterJam.Tests
         }
         #endregion
 
-        //#region NameRolling
-        //[TestMethod()]
-        //public void RollNameTestReturnsName()
-        //{
-        //    Character Jeff = new Character();
-        //    Jeff.Name = Generate.RollName();
-        //    Assert.IsTrue();
-        //}
-        //#endregion
+        #region NameRolling
+        [TestMethod()]
+        public void RollNameTestReturnsName()
+        {
+            Character Jeffina = new Character();
+            Jeffina.Name = Generate.RollName(rnd);
+            string firstName = Jeffina.Name.Split(' ')[0];
+            string lastName = Jeffina.Name.Split(' ')[1];
+            Assert.IsTrue(Names.FemaleNames.Contains(firstName) | Names.MaleNames.Contains(firstName));
+            Assert.IsTrue(Names.LastNames.Contains(lastName));
+        }
+        #endregion
 
         #region AgeRolling
         [TestMethod()]
