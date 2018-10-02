@@ -8,21 +8,23 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CharacterJam
 {
-    public class Character : IToon
+    [Table("studentdetails")]
+    public class CharacterDBO
     {
+        [Key]
         public int CharacterId { get; set; }
         public string Name { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
-        public string Languages{ get; set;}
-        public IRace Race { get; set; }
-        public IClass Class { get; set; }
-        public Stats Stats { get; set; }
-        public Skills Skills { get; set; }
-        public Tools Tools { get; set; }
-        public Lifestyles Lifestyle { get; set; }
-        public Alignments Alignment { get; set; }
-        public Background Background { get; set; }
+        public string Languages { get; set; }
+        public string Race { get; set; }
+        public string Class { get; set; }
+        public string Stats { get; set; }
+        public string Skills { get; set; }
+        public string Tools { get; set; }
+        public string Lifestyle { get; set; }
+        public string Alignment { get; set; }
+        public string Background { get; set; }
         public string Trait { get; set; }
         public string Ideal { get; set; }
         public string Bond { get; set; }
