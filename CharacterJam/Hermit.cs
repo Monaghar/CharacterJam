@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Hermit : Background
+    public class Hermit : Background
     {
         public List<string> LifeOfSeclusion
         {

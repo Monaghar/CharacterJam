@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Outlander : Background
+    public class Outlander : Background
     {
         public List<string> Origin
         {

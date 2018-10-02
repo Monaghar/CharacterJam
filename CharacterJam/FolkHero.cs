@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class FolkHero : Background
+    public class FolkHero : Background
     {
         public  List<string> DefiningEvent
         {

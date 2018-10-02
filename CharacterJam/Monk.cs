@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Monk : IClass
+    public class Monk : IClass
     {
         public int HitDie { get { return 8; } }
         public string ArmorAndWeapons { get { return "Simple weapons, shortswords"; } }

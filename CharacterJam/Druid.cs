@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Druid : IClass
+    public class Druid : IClass
     {
         public int HitDie { get { return 8; } }
         public string ArmorAndWeapons { get { return "Light and medium armor (nonmetal), shields(nonmetal), " +

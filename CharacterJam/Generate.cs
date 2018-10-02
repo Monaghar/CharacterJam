@@ -21,7 +21,7 @@ namespace CharacterJam
         static StoutHalfling Shalfling = new StoutHalfling();
         static Tiefling Tief = new Tiefling();
         static WoodElf Welf = new WoodElf();
-        static List<IRace> raceList = new List<IRace>()
+        public static List<IRace> raceList = new List<IRace>()
             {
                 Delf, DBorn, FGnome, Halfelf, Horc, Helf, Hdwarf, LHalfling, Mdwarf, Rgnome, Shalfling, Tief, Welf
             };
@@ -38,7 +38,7 @@ namespace CharacterJam
         static Sorcerer Sorc = new Sorcerer();
         static Warlock Warlok = new Warlock();
         static Wizard Wiz = new Wizard();
-        static List<IClass> classList = new List<IClass>()
+        public static List<IClass> classList = new List<IClass>()
             {
                 Barb, Bard, Cleric, Druid, Fight, Monk, Paladin, Ranger, Rogue, Sorc, Warlok, Wiz
             };
@@ -56,7 +56,7 @@ namespace CharacterJam
         static Sailor sailor = new Sailor();
         static Soldier soldier = new Soldier();
         static Urchin urchin = new Urchin();
-        static List<Background> BackgroundList = new List<Background>()
+        public static List<Background> BackgroundList = new List<Background>()
             {
                 acolyte, charlatan, criminal, entertainer, folkHero, guildArtisan, hermit, noble, outlander, sage, sailor, soldier, urchin
             };
@@ -85,7 +85,6 @@ namespace CharacterJam
 
         public static Background RollBackground(Random rnd)
         {
-           
             int r = rnd.Next(BackgroundList.Count);
             return BackgroundList[r];
         }

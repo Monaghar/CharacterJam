@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Tiefling : IRace
+    public class Tiefling : IRace
     {
         public int StrBonus { get { return 0; } }
         public int DexBonus { get { return 0; } }
@@ -20,7 +20,7 @@ namespace CharacterJam
         public string Language { get { return "Infernal, Common "; } }
         public override string ToString()
         {
-            return "Tieflingf";
+            return "Tiefling";
         }
     }
 }

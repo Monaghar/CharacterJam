@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class GuildArtisan : Background
+    public class GuildArtisan : Background
     {
         public List<string> GuildBusiness
         {

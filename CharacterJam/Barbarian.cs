@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Barbarian : IClass
+    public class Barbarian : IClass
     {
 
         public int HitDie { get { return 12; } }

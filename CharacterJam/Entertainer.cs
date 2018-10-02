@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CharacterJam
 {
-    class Entertainer : Background
+    public class Entertainer : Background
     {
         public override List<string> Trait
         {
