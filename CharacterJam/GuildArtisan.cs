@@ -92,7 +92,7 @@ namespace CharacterJam
         public Tools Toolz { get { return new Tools { ArtisansTools = 1, NavigatorsTools = 1 }; } }
         public override string ToString()
         {
-            return "Background: Guild Artisan";
+            return "Guild Artisan";
         }
     }
 }

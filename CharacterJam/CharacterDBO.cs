@@ -8,9 +8,28 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CharacterJam
 {
-    [Table("studentdetails")]
+    [Table("Characters")]
     public class CharacterDBO
     {
+        public CharacterDBO(Character tempChar){
+            Name = tempChar.Name;
+            Gender = tempChar.Gender;
+            Age = tempChar.Age;
+            Languages = tempChar.Languages;
+            Race = tempChar.Race.ToString();
+            Class = tempChar.Class.ToString();
+            Stats = tempChar.Stats.ToString(); 
+            Skills = tempChar.Skills.ToString();
+            Tools = tempChar.Tools.ToString();
+            Lifestyle = tempChar.Lifestyle.ToString();
+            Alignment = tempChar.Alignment.ToString();
+            Background = tempChar.Background.ToString();
+            Trait = tempChar.Trait.ToString();
+            Ideal = tempChar.Ideal.ToString();
+            Bond = tempChar.Bond.ToString();
+            Flaw = tempChar.Flaw.ToString();
+        }
+
         [Key]
         public int CharacterId { get; set; }
         public string Name { get; set; }

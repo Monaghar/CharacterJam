@@ -123,7 +123,7 @@ namespace CharacterJam
 
         public static string RollLanguage(Random rnd, Character steven)
         {
-            return "Language: " + steven.Background.Language + " " + steven.Race.Language; 
+            return  steven.Race.Language + " " + steven.Background.Language ; 
         }
 
         public static int RollAge(Random rnd, IRace steven)

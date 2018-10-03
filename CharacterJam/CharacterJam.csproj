@@ -100,6 +100,15 @@
     <Compile Include="Human.cs" />
     <Compile Include="IToon.cs" />
     <Compile Include="LightfootHalfling.cs" />
+    <Compile Include="Migrations\201810020440151_InitialCreate.cs" />
+    <Compile Include="Migrations\201810020440151_InitialCreate.Designer.cs">
+      <DependentUpon>201810020440151_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810030309319_test.cs" />
+    <Compile Include="Migrations\201810030309319_test.Designer.cs">
+      <DependentUpon>201810030309319_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
     <Compile Include="Monk.cs" />
     <Compile Include="MountainDwarf.cs" />
@@ -131,6 +140,14 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810020440151_InitialCreate.resx">
+      <DependentUpon>201810020440151_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810030309319_test.resx">
+      <DependentUpon>201810030309319_test.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

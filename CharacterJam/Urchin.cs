@@ -64,7 +64,7 @@ namespace CharacterJam
         public Tools Toolz { get { return new Tools { DisguiseKit = 1, ThievesTools = 1 }; } }
         public override string ToString()
         {
-            return "Background: Urchin";
+            return "Urchin";
         }
     }
 }

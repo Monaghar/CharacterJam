@@ -63,7 +63,7 @@ namespace CharacterJam
         public Tools Toolz { get { return new Tools { DisguiseKit = 1, MusicalInstrument = 1 }; } }
         public override string ToString()
         {
-            return "Background: Entertainer";
+            return "Entertainer";
         }
     }
 }

@@ -74,7 +74,7 @@ namespace CharacterJam
         public Tools Toolz { get { return new Tools { DisguiseKit = 1, ForgeryKit = 1 }; } }
         public override string ToString()
         {
-            return "Background: Charlatan";
+            return "Charlatan";
         }
     }
 }

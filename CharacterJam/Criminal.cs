@@ -62,7 +62,7 @@ namespace CharacterJam
         public  Tools Toolz { get { return new Tools { GamingSet = 1, ThievesTools = 1 }; ; } }
         public override string ToString()
         {
-            return "Background: Criminal";
+            return "Criminal";
         }
     }
 }

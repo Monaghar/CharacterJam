@@ -65,7 +65,7 @@ namespace CharacterJam
         public List<string> Language { get { return new List<string> { "One Languages of your Choice" }; }} //make random?
         public override string ToString()
         {
-            return "Background: Noble";
+            return "Noble";
         }
     }
 }

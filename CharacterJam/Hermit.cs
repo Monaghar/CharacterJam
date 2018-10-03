@@ -76,7 +76,7 @@ namespace CharacterJam
         public Tools Toolz { get { return new Tools { HerbalismKit = 1 }; } }
         public override string ToString()
         {
-            return "Background: Hermit";
+            return "Hermit";
         }
     }
 }

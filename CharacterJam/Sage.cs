@@ -78,7 +78,7 @@ namespace CharacterJam
         public string Language { get { return "Two Languages of your Choice"; } } //make random?
         public override string ToString()
         {
-            return "Background: Sage";
+            return "Sage";
         }
     }
 }
